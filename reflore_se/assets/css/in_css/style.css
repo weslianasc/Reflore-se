@@ -1,0 +1,406 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+
+
+/* BASIC THEME CONFIGURATION */
+body {
+    color: rgba(28,28,28, 0.90);
+	background: #FFF;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size:13px;
+}
+
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+::selection {
+
+    background: #2BD978;
+    color: #fff;
+}
+::-moz-selection {
+    background: #2BD978;
+    color: #fff;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*Helpers*/
+
+.centered {
+	text-align: center;
+}
+
+
+/*Exclusive Theme Colors Configuration*/
+
+ul.top-menu > li > .logout {
+	color: #f2f2f2;
+	/* font-size: 12px; */
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/* border: 1px solid #145334 !important;
+	padding: 5px 15px; */
+	margin-right: 15px;
+	background: #2BD978;
+	margin-top: 15px;
+}
+
+
+/*sidebar navigation*/
+
+#sidebar {
+    width: 210px;
+    height: 100vh !important;
+    height: calc(100vh + 6.4em) !important; /*deixar a div do tamanho da tela*/
+    padding-top: 5em;
+    position: fixed;
+    background: #1a2b33f5;
+}
+
+#sidebar h3 {
+	color: #f2f2f2 !important;
+    font-weight: 400 !important;
+    font-family:  "Source Sans Pro", Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+ul.sidebar-menu , ul.sidebar-menu li ul.sub{
+    margin: -2px 0 0;
+    padding: 0;
+}
+
+ul.sidebar-menu {
+    margin-top: 75px;
+}
+
+/* MAIN CONTENT CONFIGURATION */
+#main-content {
+    margin-left: 210px;
+}
+
+.header, .footer {
+    min-height: 60px;
+    padding: 0 15px;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    height: 5em;
+    right: 0;
+    z-index: 1002;
+}
+
+.black-bg {
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.wrapper {
+    display: inline-block;
+    margin-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    width: 100%;
+}
+
+a.logo {
+    font-size: 24px;
+    color: #19A861;
+    float: left;
+    margin-top: 15px;
+    font-family: "icomoon";
+}
+
+
+
+/*--sidebar toggle---*/
+
+.sidebar-toggle-box {
+    float: left;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.sidebar-toggle-box .fa-bars {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.sidebar-closed > #sidebar > ul {
+    display: none;
+}
+
+.sidebar-closed #main-content {
+    margin-left: 0px;
+}
+
+.sidebar-closed #sidebar {
+    margin-left: -180px;
+}
+
+
+/* Dash Side */
+
+.ds {
+    height: 100vh !important;
+    height: calc(100vh + 6.4em) !important; /*deixar a div do tamanho da tela*/
+    background: #1a2b33f5;
+    padding-top: 20px;
+    right: 0;
+    width: 22em;
+    /* overflow-y: scroll; */
+}
+
+.ds h4 {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.ds i {
+	font-size: 14px;
+}
+
+.ds .desc {
+	border-bottom: 1px dotted #979797;
+	display: inline-block;
+	padding: 15px 0;
+	width: 100%;
+}
+
+.ds .desc:hover {
+	background: #ffffff67;
+}
+
+.ds .thumb {
+	width: 30px;
+	margin: 0 10px 0 20px;
+	display: block;
+	float: left;
+}
+
+.ds .details {
+	width: 170px;
+	float: left;
+}
+
+.ds > .desc p {
+	font-size: 11px;
+}
+
+.ds p > muted {
+	font-size: 9px;
+	text-transform: uppercase;
+	font-style: italic;
+	color: #666666
+}
+
+.ds a {
+    color: rgb(255, 255, 255) !important;
+    font-size: 13px;
+    font-weight: 400 !important;
+    text-transform: capitalize;
+}
+a.ver{
+    text-align: center !important;
+    color: red !important;
+    margin: 50%;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 400 !important;
+}
+
+/* modal */
+
+input{
+	height: 2em !important;
+    width: 49% !important;
+    font-size: 16px;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+/* MAIN CHART CONFIGURATION */
+.main-chart {
+	padding-top: 20px;
+}
+
+.custom-bar-chart {
+    height: 290px;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    border-bottom: 1px solid #c9cdd7;
+}
+
+.custom-bar-chart .bar {
+    height: 100%;
+    position: relative;
+    width: 6%;
+    margin: 0px 4%;
+    float: left;
+    text-align: center;
+    z-index: 10;
+}
+
+.custom-bar-chart .bar .title {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+}
+
+.custom-bar-chart .bar .value {
+    position: absolute;
+    bottom: 0;
+    background: #2BD978;
+    color: #2BD978;
+    width: 100%;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.custom-bar-chart .bar .value:hover {
+    background: rgba(28,28,28, 0.90);
+    color: #fff;
+}
+
+.y-axis {
+    color: rgba(28,28,28, 0.95);
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    font-size: 11px;
+}
+
+.y-axis li {
+    border-top: 1px dashed #dbdce0;
+    display: block;
+    height: 58px;
+    width: 100%;
+}
+
+.y-axis li:last-child {
+    border-top: none;
+}
+
+.y-axis li span {
+    display: block;
+    margin: -10px 0 0 -60px;
+    padding: 0 10px;
+    width: 40px;
+}
+
+
+/* *************************************************************************************
+PANELS CONFIGURATIONS
+*************************************************************************************** */
+
+/*Panel Size*/
+
+.pn {
+	height: 250px;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Dark Blue*/
+
+.darkblue-panel {
+	text-align: center;
+	background: #1C1C1C;
+}
+.darkblue-panel .darkblue-header {
+	background: transparent;
+	padding: 3px;
+	margin-bottom: 15px;
+}
+.darkblue-panel h1 {
+	color: #f2f2f2;
+}
+.darkblue-panel h5 {
+	font-weight: 200;
+	margin-top: 10px;
+	color: white;
+}
+.darkblue-panel footer {
+	color: white;
+}
+.darkblue-panel footer h5 {
+	margin-left:10px;
+	margin-right: 10px;
+	font-weight: 700;
+}
+
+/*Green Panel*/
+.green-panel {
+	text-align: center;
+	background: #2BD978;
+}
+.green-panel .green-header {
+	background: #145334 !important;
+	padding: 3px;
+	margin-bottom: 15px;
+}
+.green-panel h5 {
+	color: white;
+	font-weight: 200;
+	margin-top: 10px;
+}
+.green-panel h3 {
+	color: white;
+	font-weight: 100;
+}
+.green-panel p {
+	color: white;
+}
+
+.modal .btn2 {
+	background-color: rgb(83, 136, 172) !important;
+	color: white !important;
+	vertical-align: initial;
+}
+.modal .close2 {
+	vertical-align: initial;
+	border: 0px !important;
+	outline: none !important;
+	box-shadow: none; 
+	padding: 0 !important;
+}
+.modal .btn2:focus{
+	border: none !important;
+}
+
+/* Local pra mensagem */
+.newsletter2 .form-group2 {
+	width: 100% !important;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+}
+.btn2{
+	margin-bottom: 2%;
+}
