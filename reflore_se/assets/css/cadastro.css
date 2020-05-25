@@ -1,0 +1,26 @@
+
+.card{
+    border: none !important;
+}
+.collapse, .list-group-item{
+    border: none !important;
+}
+.list-group-item{
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+    padding-bottom: 0 !important; 
+}
+form{
+    border-radius: 15px;
+}
+
+.card-header{
+    background-color: white !important;
+}
+.form-row{
+    display: flex;  
+    justify-content: center;
+}
+.radio{
+    margin-left: 5% !important;
+}

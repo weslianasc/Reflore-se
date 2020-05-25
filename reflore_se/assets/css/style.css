@@ -1,0 +1,99 @@
+/* Menu */
+/* @media only screen and (max-width: 771px) {
+	.sidebar {
+		height: 300px;
+		width: 0;
+		position: fixed;
+		z-index: 1 !important;
+		top: 0;
+		right: 0;
+		background-color: #19A861;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	  }
+	  .nav-link{
+		font-size: 20px;
+	}
+	.fecharmenu{
+		position: absolute;
+		display: initial !important;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		color: #F2F3F1 !important;
+		text-decoration: none !important;
+	}
+} */
+
+/* Rodapé */
+
+.footer {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #393E46AA;
+	position: relative;
+	/* font-family: 'Titillium Web', sans-serif !important; */
+}
+.footer h5 {
+	color: white;
+}
+.col a {
+	color: white !important;
+	text-decoration: none !important;
+}
+.footer::after {
+	content: "";
+	background-image: url("../img/rodape.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	z-index: -1;
+}
+.icone {
+	font-size: 2em;
+}
+.slogan {
+	color: white;
+}
+.copyright {
+	background-color: #171B27;
+}
+
+/* Botões - redes sociais */
+.redes-sociais a:hover {
+	color: white !important;
+}
+.fa-facebook-f {
+	padding: 10px 14px;
+}
+.fa-facebook-f:hover {
+	background-color: #3b5998;
+	transition: background-color 1s;
+}
+.fa-instagram {
+	padding: 10px 11px;
+}
+.fa-instagram:hover {
+	background-color: #517fa4;
+	transition: background-color 1s;
+}
+.fa-twitter, .fa-youtube {
+	padding: 10px 10px;
+}
+.fa-twitter:hover {
+	background-color: #00aced;
+	transition: background-color 1s;
+}
+.fa-youtube:hover {
+	background-color: #bb0000;
+	transition: background-color 1s;
+}

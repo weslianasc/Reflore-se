@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.total{
+    width: 100vw !important; /*deixar a div do tamanho da tela*/
+    height: 100vh !important; /*deixar a div do tamanho da tela*/
+    padding: 7em 10% 1.5% 10%;
+}
+/*imagem*/
+.img-fluid{ /*Deixar as imagens responsivas*/
+
+    width: 40% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+.desc{
+    text-align: justify;
+    float: right;
+    height: 100% !important;
+    width: 58% !important; 
+}
+.dicas{
+    width: 100%;
+    padding: 0% 10% 0% 10% !important;
+    text-align: justify;
+}
+.text{
+    color: rgb(20, 83, 52) !important;
+}
+/*Rodapé*/
+.footer{
+    clear: both;
+}
+/*Responsividade*/
+@media only screen and (max-width: 2000px) {
+    .desc{
+       margin-bottom: 2%;   
+    }
+    .total{
+        height: 25em;
+    }
+    
+}
+@media only screen and (max-width: 1000px) {
+    .total{
+        height: auto;
+    }
+    .img-fluid{
+        width: 100% !important;
+        height: 20em !important;
+        margin: 0 0 2% 0;
+        float: none !important;
+    }
+    .desc{
+        padding: 2% !important;
+        float: none;
+        width: 100% !important; 
+    }
+}

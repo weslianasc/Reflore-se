@@ -1,0 +1,129 @@
+body a{
+	text-decoration: none;
+}
+/* Carousel */
+.carousel{
+    margin-top: 0;
+}
+.carousel-indicators li { /*Pra deixar os indicadores redondos*/
+	height: 10px !important;
+    width: 10px !important;
+}
+.carousel-item{
+    height: 100%;
+    width: 100vw; /*deixar a div do tamanho da tela*/
+    height: 100vh; /*deixar a div do tamanho da tela*/
+}
+.d-block{ /*Deixar as imagens responsivas*/
+    width: 100vw !important;
+    object-fit: cover !important;
+    display: block !important;
+    height: 100% !important;
+}
+
+/* Cards */
+
+.card-deck{
+    width: 100% !important;
+    padding: 5% 10%;
+}
+.card{
+    padding: 1.5% !important;
+}
+.card-title{
+	color: #19A861;	
+}
+
+.lin:hover{
+	color: #212529 !important;
+}
+
+.card-img-top{
+    height: 15em !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+
+/*responsividade dos cards*/
+@media (max-width: 800px) {
+	.card-deck{
+		display: flex !important;
+		flex-direction: column !important;
+	}
+	.card{
+		margin-bottom: 2em !important;
+	}
+}
+
+
+/* Chamar os colaboradores */
+
+.newsletter, .newsletter2 {
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: rgb(98, 177, 137);
+}
+.newsletter h3, .newsletter2 h3 {
+	text-align: center;
+	color: white;
+	display: flex;
+}
+.newsletter .btn2, .newsletter2 .btn2 {	
+	vertical-align: initial;
+	text-align: center !important;
+}
+.newsletter .form-group {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+/* Local pra mensagem */
+.modal .btn2 {
+	background-color: rgb(83, 136, 172) !important;
+	color: white !important;
+	vertical-align: initial;
+}
+.modal .close2 {
+	vertical-align: initial;
+	border: 0px !important;
+	outline: none !important;
+	box-shadow: none; 
+	padding: 0 !important;
+}
+.modal .btn2:focus{
+	border: none !important;
+}
+
+/* Local pra mensagem */
+.newsletter2 .form-group2 {
+	width: 100% !important;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+}
+.btn2{
+	margin-bottom: 2%;
+}
+
+
+/*responsividade do local das mensagens*/
+@media (max-width: 800px) {
+	.form-group2{
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center;
+	}
+	.form-group2 input{
+		width: 90% !important;
+		margin: 0 !important;
+		margin-bottom: 1em !important;
+
+	}
+}

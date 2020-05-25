@@ -1,0 +1,92 @@
+
+body{
+    /* font-weight: 400 !important;  
+     line-height: 24px !important; */
+    /* background-image: url("../img/fundo_pedido1.png") !important; */
+    /* background-color: rgba(15, 87, 63, 0.671) !important; */
+	/* background-size: cover !important;
+	background-position: left !important;
+	background-attachment: fixed !important;
+	background-repeat: none !important;
+    height: 100% !important; */
+}
+
+/*Formulário*/
+.form{
+    width: 100vw !important; /*deixar a div do tamanho da tela*/
+    height: 100vh !important; /*deixar a div do tamanho da tela*/
+    height: calc(100vh + 6.4em) !important; /*deixar a div do tamanho da tela*/
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 7em;
+    background-color: rgba(15, 87, 63, 0.671) !important;
+}
+form{
+    padding: 0 2% 2% 2% !important;
+    width: 40% !important;
+    height: auto !important;
+    background-color: WHITE !important;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column !important;
+    border-radius: 15px !important;
+    font: inherit !important;
+}
+label{
+    color: #0C0B0A !important;
+    font-size: 1rem !important;
+    text-transform: capitalize;
+}
+.btn{
+    font-size: 18px !important;
+    border-radius: .25rem;
+    border-style: solid;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    height: auto !important;
+    border: rgba(0, 0, 0, 0) !important;
+    width: 100% !important;
+    background-color: rgb(25, 168, 97) !important;
+    color: #fff !important;
+    opacity:0.9;
+    padding-bottom:6px !important;
+    padding-left:12px !important;
+    padding-right:12px !important;
+    padding-top:6px;
+    letter-spacing: 0.250;
+    font-stretch:100%;
+    line-height:1.5 !important;
+    text-transform: none !important;
+}
+.btn:hover{
+    background-color: rgb(48, 145, 96) !important;
+}
+select, option, input{
+    width: 100% !important;
+    height: 2.5em !important;
+    font-size: 18px !important;
+}
+
+option, p{
+    text-transform: capitalize;
+}
+
+input, select{
+    padding: 10px;
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
+
+@media only screen and (max-width: 500px) {
+    form{
+        width: 70% !important;
+    }   
+}
+@media only screen and (max-width: 360px) {
+    form{
+        width: 90% !important;
+        margin-top: 50% !important;
+        margin-bottom: 10% !important;
+    }  
+}

@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Formulário*/
+.form{
+    background-color: rgba(15, 87, 63, 0.671) !important;
+    width: 100vw; /*deixar a div do tamanho da tela*/
+    height: 100vh; /*deixar a div do tamanho da tela*/
+    background: #6C7A89;
+    display: flex;
+    flex-direction: row;
+}
+form{
+    background-color: white !important;
+    padding: 2%;
+    width: 50%; 
+    border-radius: 15px;
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.icon {
+  padding: 10px !important;
+  background: #19A861;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+} 
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+.input-field:focus {
+  border: 2px solid #19A861;
+}
+.btn {
+  background-color: #19A861;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 1;
+}
+button:focus{
+    outline: none !important;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+.imgcontainer {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 24px 0;
+}
+img.avatar {
+    width: 7em;
+    text-align: center;
+} 
+span.psw {
+    float: right;
+    text-decoration: none;
+}
+.dsu {
+    text-align: center !important;
+}
+
+a{
+    text-decoration: none !important;
+    color: #212529 !important;
+}
+
+a:hover{
+    color: #4CAF50 !important;
+    text-decoration: underline !important;
+}
+
+@media screen and (max-width: 600px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cadastrar {
+        width: 100%;
+    }
+}  
+@media screen and (max-width: 400px) {
+    form{
+        width: 80%;
+    }
+}  

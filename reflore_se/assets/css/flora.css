@@ -1,0 +1,55 @@
+/* Cards */
+.todo{
+    /*padding-top: 7em;*/
+    padding: 7em 5% 1.5% 5%;
+}
+/* .card-deck{
+    margin: 0% 1.5% 1.5% 1.5% !important;
+} */
+.card{
+    /* margin-top: 1.5% !important; */
+    width: 20em;
+    /* //height: 30em; */
+    margin: 0.9%;
+    display: inline-block !important;
+}
+.card-img-top{
+    height: 10em !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+.card-text{
+    height: 8em !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+.btn{
+    background-color: rgb(20, 83, 52) !important;
+    border: none !important;
+    margin: 0 0 3% 5% !important;
+    font-size: 20px !important;
+}
+
+.btn:hover{
+    background-color: rgb(48, 145, 96) !important;
+}
+/* .btn-primary:focus{
+    outline: none !important;
+} */
+
+/*Paginação*/
+
+.page-link{
+    color: rgb(20, 83, 52) !important;
+    font-size: 20px !important;
+}
+.pagination{
+    margin: 2% 0 !important;
+}
+
+@media only screen and (max-width: 900px) {
+    .card-deck{
+       display: block !important;
+    }
+}
